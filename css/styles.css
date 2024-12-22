@@ -547,13 +547,13 @@ header {
     height: 80px;
 }
 
-.form-title-foote {
+.form-title-footer {
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em;
     color:FFFFFF;
-    margin-bottom: 16px
+    margin-bottom: 16px;
 }
 
 .form-footer {
@@ -576,6 +576,7 @@ header {
 }
 
 .subscribe-button {
+    font-weight: 500; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -585,11 +586,12 @@ header {
     padding: 8px 24px;
     min-width: 165px;
     height: 40px;
-    background: 4D5AE5;
+    background-color: 4D5AE5;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #FFFFFF;
+    border: none;
     
     cursor: pointer;
 
