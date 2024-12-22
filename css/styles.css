@@ -592,12 +592,13 @@ header {
     letter-spacing: 0.04em;
     color: #FFFFFF;
     border: none;
+
     
     cursor: pointer;
 }
 
 .form-footer-icon {
-    margin-left: 16px;
+    fill: #f4f4fd;
 }
 
 /* FORM section 1 */
@@ -668,6 +669,11 @@ header {
     background-color: transparent;
 
     border-radius: 4px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center; 
 }   
 
 .icon-close:hover, 
