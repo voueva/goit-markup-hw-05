@@ -735,10 +735,13 @@ header {
     position: relative;
 }
 
+.modal-form-input:focus + .form-input-icon {
+    fill: #4D5AE5;
+}
+
 .form-user-coment {
     width: 100%;
     resize: none;
-    min-height: 137px;
     outline: transparent; 
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
@@ -776,7 +779,7 @@ header {
     width: 16px;
     height: 16px;
     border-radius: 2px;
-    border: 1px solid rgba(46, 47, 66, 0.4); 
+    border: 1px solid rgba(46, 47, 66, 0.4);
     margin-right: 12px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -798,7 +801,7 @@ header {
 
 
 .castom-checkbox-icon {
-
+    
 }
 
 .accept-link {
