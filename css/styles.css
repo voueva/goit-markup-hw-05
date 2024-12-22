@@ -600,7 +600,7 @@ header {
 }
 
 /* FORM section 1 */
-.backdrop {
+.backdrop-is-open {
     position: fixed;
     top: 0;
     left: 0;
@@ -619,7 +619,7 @@ header {
 
 }
 
-.backdrop.is-open {
+.backdrop-is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
