@@ -581,7 +581,6 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    gap: 16px;
     border-radius: 4px;
     padding: 8px 24px;
     min-width: 165px;
@@ -592,13 +591,12 @@ header {
     letter-spacing: 0.04em;
     color: #FFFFFF;
     border: none;
-
-    
     cursor: pointer;
 }
 
 .form-footer-icon {
     fill: #f4f4fd;
+    margin-left: 16px;
 }
 
 /* FORM section 1 */
