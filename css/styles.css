@@ -541,22 +541,41 @@ header {
 
 /* FORM-footer */
  
-.form-footer {
+.form-footer-container {
     margin-left: auto;
     width: 453px;
     height: 80px;
 }
 
 .form-title-foote {
-font-weight: 500;
-font-size: 16px;
-line-height: 150%;
-letter-spacing: 0.02em;
-color:FFFFFF;
-margin-top: 22px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color:FFFFFF;
+    margin-bottom: 16px
 }
 
-.subscribe {
+.form-footer {
+    display: flex;
+    gap: 24px;
+}
+.form-footer-input {
+    width: 264px; 
+    height: 40px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2; 
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
+    border-radius: 4px;
+    color: #ffffff;
+    
+}
+
+.subscribe-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -564,9 +583,16 @@ margin-top: 22px;
     gap: 16px;
     border-radius: 4px;
     padding: 8px 24px;
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     background: 4D5AE5;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    
+    cursor: pointer;
+
 }
 
 /* FORM section 1 */
