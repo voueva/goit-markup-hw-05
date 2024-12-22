@@ -619,7 +619,8 @@ header {
 
 }
 
-.backdrop.is-open {
+/* TODO: .backdrop.is-open */
+.backdrop { 
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
