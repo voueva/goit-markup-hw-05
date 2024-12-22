@@ -632,8 +632,7 @@ header {
     width: 408px;
     min-height: 584px;
     border-radius: 4px;
-    padding: 40px;
-    padding-top: 38px;
+    padding: 72px 24px 24px 24px;
 
     transform: translate(-50%, -50%);
 
@@ -655,58 +654,84 @@ header {
     line-height: 150%;
     letter-spacing: 0.02em;
     text-align: center;
-    color: 2E2F42;
-    margin-bottom: 48px;
+    color: #2E2F42;
+    margin-bottom: 16px;
 }
 
 .modal-close {
     position: absolute;
     top: 24px;
     right: 24px;
-    background-color: transparent;
-
-    border-radius: 4px;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     width: 24px;
     height: 24px;
     border-radius: 50%;
+    padding: 0;
+    cursor: pointer; 
+
     display: flex;
     align-items: center; 
-}   
+    justify-content: center; 
 
-.icon-close:hover, 
-.icon-close:focus {
-    stroke: 404BBF;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}  
+
+.modal-close:hover,
+.modal-close:focus {
+    background-color: #404bbf;
+    border: none;
 }
 
-.form-user-label {
+.icon-close {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.modal-close:hover .icon-close,
+.modal-close:focus .icon-close {
+    fill: #ffffff;
+}
+
+.modal-form-label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     font-weight: 400;
     font-size: 12px;
     line-height: 117%;
     letter-spacing: 0.04em;
-    color: 8E8F99;
+    color: #8E8F99;
 }
-.form-user-input {
+
+.modal-form-input {
     width: 100%;
     height: 40px;
     border-radius: 4px;
-    /* padding: 22px 24px; */
-    border: 1px solid 4D5AE5;
-    padding-left: 62px;
+    border: 1px solid rgba(46, 47, 66, 0.4); 
+    padding-left: 38px; 
+    background-color: transparent; 
+    outline: transparent; 
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-user-icon {
+.modal-form-input:focus {
+    border-color: #4D5AE5; 
+}
+
+.modal-form-input:focus.form-input-icon {
+    fill: #4D5AE5;
+}
+
+.form-input-icon {
     position: absolute;
     fill: transparent;
     stroke: #111111;
     top: 50%;
-    left: 24px;
+    left: 16px;
     transform: translateY(-50%);
-    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-user-icon-wrapper {
+.form-input-icon-wrapper {
     position: relative;
 }
 
@@ -788,4 +813,14 @@ header {
     color: #4D5AE5;
     background-color: #fcf1e0;
 }
+
+.form-wrapper-cont {
+    margin-bottom: 8px;
+}
+
+.form-wrapper-cont-last {
+    margin-bottom: 16px;
+}
+
+
 
