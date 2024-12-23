@@ -723,8 +723,7 @@ header {
 
 .form-input-icon {
     position: absolute;
-    fill: transparent;
-    stroke: #111111;
+    fill: #2E2F42;
     top: 50%;
     left: 16px;
     transform: translateY(-50%);
